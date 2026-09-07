@@ -1,140 +1,345 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    font-family: Arial, sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #123;
+    background-color: #f5f9fc;
 }
 
-header{
-    position: fixed;
-    top: 20px;
-    left: 20px;
+a {
+    text-decoration: none;
 }
 
-.logo{
-    width: 80px;
-    height: auto;
-}
 
-main{
+header {
+    width: 100%;
+    height: 90px;
+
+    background-color: #073b66;
+
     display: flex;
-    height: 100vh;
-}
-
-.esquerda{
-    width: 50%;
-    background-color: #0d2d62;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 50px;
-    border-radius: 10px;
-}
-
-.titulo{
-    margin-top: 40px;
-    margin-left: 70px;
-    font-size: 50px;
-}
-
-.praia{
-    margin-left: 70px;
-}
-
-.direita{
-    width: 50%;
-    background-color: #ecf0f1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 50px;
-    border-radius: 10px;
-}
+    justify-content: space-between;
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 70%;
-}
+    padding: 0 7%;
 
-input{
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-button{
-    padding: 12px;
-    background-color: #0d2d62;
     color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+}
+
+
+
+.logo h4 {
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
     font-size: 16px;
+
+    transition: 0.3s;
 }
 
-button:hover{
-    background-color: #2980b9;
+nav a:hover {
+    color: #8ddcff;
 }
 
-.foto-baixo{
-    position:absolute bottom;
-    bottom: 20px;
-    width: 500px; 
-    height: auto;
-    align-self: center;
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 8%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 45, 80, 0.55),
+            rgba(0, 45, 80, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+
+    background-size: cover;
+    background-position: center;
 }
 
-.preco{
-    color: green;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    align-self: flex-end;
-    margin-right: 20px;
+
+.hero-content {
+    max-width: 650px;
+    color: white;
 }
 
-.data{
-    color: black;
-    align-self: center;
-    margin-top: 20px;
-    font-weight: 900;
-}
 
-.info{
-    font-size: small;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+.hero-content h2 {
+    font-size: 52px;
+    line-height: 1.1;
+
     margin-bottom: 20px;
 }
 
-.botoes{
-    bottom: 20px;
-    right: 20px;
+
+.hero-content p {
+    font-size: 19px;
+    line-height: 1.6;
+
+    max-width: 570px;
+
+    margin-bottom: 35px;
+}
+
+.botoes {
+    display: flex;
     gap: 15px;
-    align-self: flex-end;
 }
 
-.botao{
-    background-color: #0d2d62;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
+
+.botao {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    border-radius: 7px;
+
     font-weight: bold;
+
     transition: 0.3s;
-    size: 5px;
 }
 
-.botao:hover{
-    background-color: #2980b9;
+
+.principal {
+    background-color: white;
+    color: #073b66;
+}
+
+.principal:hover {
+    transform: translateY(-3px);
+}
+
+
+.secundario {
+    background-color: #0b8fc7;
+    color: white;
+}
+
+.secundario:hover {
+    transform: translateY(-3px);
+}
+
+.diferenciais {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.diferenciais > h2 {
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.card {
+    background-color: white;
+
+    padding: 30px 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.card span {
+    font-size: 40px;
+}
+
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.destaques {
+    padding: 70px 8%;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+
+.destaques > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+.destinos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin-bottom: 40px;
+}
+
+
+.destino {
+    background-color: #f5f9fc;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.imagem {
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #bde7f7;
+}
+
+
+.imagem span {
+    font-size: 70px;
+}
+
+
+.destino h3 {
+    margin-top: 20px;
+    font-size: 21px;
+}
+
+
+.destino p {
+    margin: 8px 0 20px;
+    color: #666;
+}
+
+.ver-destinos {
+    background-color: #073b66;
+    color: white;
+}
+
+.ver-destinos:hover {
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: #073b66;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+
+footer p {
+    margin-bottom: 10px;
+}
+
+
+.copyright {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+
+
+@media (max-width: 900px) {
+
+    header {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .hero-content h2 {
+        font-size: 40px;
+    }
+
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .destinos {
+        grid-template-columns:
+            1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .botao {
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }

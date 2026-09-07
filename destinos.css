@@ -1,0 +1,369 @@
+header {
+    width: 86%;
+    height: 90px;
+
+    background-color: #073b66;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    color: white;
+}
+
+.logo{
+    justify-content: space-between;
+}
+.paginas{
+    justify-content: space-between;
+}
+
+a{
+    color: white;
+}
+
+.destinos-banner {
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 8%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 45, 80, 0.65),
+            rgba(0, 45, 80, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.destinos-banner-content {
+    max-width: 700px;
+
+    color: white;
+}
+
+.destinos-banner-content > span {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.destinos-banner-content h2 {
+    font-size: 48px;
+
+    margin: 15px 0 20px;
+}
+
+.destinos-banner-content p {
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+.destinos-intro {
+    padding: 70px 20px 30px;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.destinos-intro h2 {
+    font-size: 36px;
+
+    margin: 15px 0;
+}
+
+.destinos-intro p {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #666;
+
+    line-height: 1.6;
+}
+
+.destinos-lista {
+    padding: 40px 8% 80px;
+
+    background-color: #f5f9fc;
+}
+
+
+.destinos-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.destino-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.destino-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.destino-card-imagem {
+    height: 230px;
+
+    position: relative;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-color: #bde7f7;
+}
+
+.tag {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    color: #073b66;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.destino-card-conteudo {
+    padding: 25px;
+}
+
+.destino-card-conteudo .localizacao {
+    font-size: 13px;
+
+    color: #0b8fc7;
+}
+
+.destino-card-conteudo h3 {
+    font-size: 24px;
+
+    margin: 10px 0;
+}
+
+.destino-card-conteudo > p {
+    color: #666;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+.destino-dados {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding: 15px 0;
+
+    border-top: 1px solid #e5e5e5;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+.destino-preco {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-top: 20px;
+}
+
+.destino-preco small {
+    display: block;
+
+    color: #777;
+
+    margin-bottom: 3px;
+}
+
+.destino-preco strong {
+    display: block;
+
+    color: #073b66;
+
+    font-size: 21px;
+}
+
+.botao-card {
+    padding: 11px 15px;
+
+    border-radius: 6px;
+
+    background-color: #073b66;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.botao-card:hover {
+    background-color: #0b8fc7;
+}
+
+.destinos-chamada {
+    width: 288%;
+    
+    margin: 0 0 80px;
+
+    padding: 50px;
+
+    border-radius: 15px;
+
+    background-color: #073b66;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.destinos-chamada h2 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.destinos-chamada p {
+    opacity: 0.85;
+}
+
+.chamada-reserva-botao {
+    background-color: white;
+
+    color: #073b66;
+
+    white-space: nowrap;
+
+}
+
+footer {
+    background-color: #073b66;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+
+    .destinos-cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .destinos-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .destinos-chamada {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .filtros {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .destinos-banner-content h2 {
+        font-size: 35px;
+    }
+
+
+    .destinos-intro h2 {
+        font-size: 30px;
+    }
+
+
+    .destinos-preco {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .destinos-chamada {
+        margin-left: 5%;
+        margin-right: 5%;
+
+        padding: 35px 20px;
+    }
+
+}

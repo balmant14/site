@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeachTrip | Dashboard</title>
+    <link rel="icon" type="image/png" href="/Imgsite/BeachTrip.png">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="dashboard-menu">
+
+            <div class="dashboard-logo">
+                <h1>BeachTrip</h1>
+                <p>Dashboard</p>
+            </div>
+
+            <nav>
+                <a href="dashboard.html" class="menu-ativo">
+                    🏠 Dashboard
+                </a>
+
+                <a href="index.html">
+                    🌐 Ver site
+                </a>
+
+                <a href="destinos.html">
+                    🏖️ Destinos
+                </a>
+
+                <a href="reserva.html">
+                    📋 Nova reserva
+                </a>
+
+                <a href="contatos.html">
+                    📞 Contatos
+                </a>
+            </nav>
+
+            <div class="dashboard-rodape-menu">
+                <p>BeachTrip © 2026</p>
+            </div>
+
+        </aside>
+
+        <main class="dashboard-conteudo">
+
+            <div class="dashboard-topo">
+
+                <div>
+                    <h2>Dashboard</h2>
+                    <p>Visão geral da BeachTrip</p>
+                </div>
+
+                <div class="usuario-dashboard">
+                    <div class="avatar">BT</div>
+
+                    <div>
+                        <strong>Administrador</strong>
+                        <span>Painel administrativo</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="resumo-cards">
+
+                <div class="resumo-card">
+                    <div class="resumo-icone">📋</div>
+
+                    <div>
+                        <span>Total de reservas</span>
+                        <strong>128</strong>
+                        <small>+12% este mês</small>
+                    </div>
+                </div>
+
+                <div class="resumo-card">
+                    <div class="resumo-icone">👥</div>
+
+                    <div>
+                        <span>Clientes</span>
+                        <strong>96</strong>
+                        <small>+8% este mês</small>
+                    </div>
+                </div>
+
+                <div class="resumo-card">
+                    <div class="resumo-icone">🏖️</div>
+
+                    <div>
+                        <span>Destinos</span>
+                        <strong>1</strong>
+                        <small>Destinos disponíveis</small>
+                    </div>
+                </div>
+
+                <div class="resumo-card">
+                    <div class="resumo-icone">💰</div>
+
+                    <div>
+                        <span>Faturamento</span>
+                        <strong>R$ 42.800</strong>
+                        <small>Este mês</small>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="dashboard-grid">
+
+                <div class="dashboard-box">
+
+                    <div class="box-titulo">
+                        <div>
+                            <h3>Destinos mais procurados</h3>
+                            <p>Reservas por destino</p>
+                        </div>
+                    </div>
+
+                    <div class="destino-ranking">
+
+                        <div class="ranking-item">
+
+                            <div class="ranking-info">
+                                <strong>Cabo Frio</strong>
+                                <span>42 reservas</span>
+                            </div>
+
+                            <div class="barra">
+                                <div class="barra-preenchida" style="width: 85%;"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="ranking-item">
+
+                            <div class="ranking-info">
+                                <strong>A deifinir 1</strong>
+                                <span>31 reservas</span>
+                            </div>
+
+                            <div class="barra">
+                                <div class="barra-preenchida" style="width: 70%;"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="ranking-item">
+
+                            <div class="ranking-info">
+                                <strong>A definir 2</strong>
+                                <span>24 reservas</span>
+                            </div>
+
+                            <div class="barra">
+                                <div class="barra-preenchida" style="width: 55%;"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="dashboard-box">
+
+                    <div class="box-titulo">
+                        <div>
+                            <h3>Status das reservas</h3>
+                            <p>Situação atual</p>
+                        </div>
+                    </div>
+
+                    <div class="status-lista">
+
+                        <div class="status-item">
+                            <div class="status-bolinha confirmada"></div>
+
+                            <div>
+                                <strong>Confirmadas</strong>
+                                <span>86 reservas</span>
+                            </div>
+
+                            <strong>67%</strong>
+                        </div>
+
+                        <div class="status-item">
+                            <div class="status-bolinha pendente"></div>
+
+                            <div>
+                                <strong>Pendentes</strong>
+                                <span>28 reservas</span>
+                            </div>
+
+                            <strong>22%</strong>
+                        </div>
+
+                        <div class="status-item">
+                            <div class="status-bolinha cancelada"></div>
+
+                            <div>
+                                <strong>Canceladas</strong>
+                                <span>14 reservas</span>
+                            </div>
+
+                            <strong>11%</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+    
+            <section class="dashboard-box reservas-box">
+
+                <div class="box-titulo">
+
+                    <div>
+                        <h3>Reservas recentes</h3>
+                        <p>Últimas reservas realizadas</p>
+                    </div>
+
+                    <a href="reserva.html">
+                        + Nova reserva
+                    </a>
+
+                </div>
+
+                <div class="tabela-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Destino</th>
+                                <th>Data</th>
+                                <th>Pessoas</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Maria Silva</td>
+                                <td>Cabo Frio</td>
+                                <td>15/09/2026</td>
+                                <td>2</td>
+                                <td>
+                                    <span class="status confirmado">
+                                        Confirmada
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>João Santos</td>
+                                <td>A definir 2</td>
+                                <td>20/09/2026</td>
+                                <td>3</td>
+                                <td>
+                                    <span class="status pendente">
+                                        Pendente
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Ana Oliveira</td>
+                                <td>Cabo Frio</td>
+                                <td>28/09/2026</td>
+                                <td>2</td>
+                                <td>
+                                    <span class="status confirmado">
+                                        Confirmada
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Lucas Costa</td>
+                                <td>A definir 1</td>
+                                <td>03/10/2026</td>
+                                <td>4</td>
+                                <td>
+                                    <span class="status pendente">
+                                        Pendente
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Beatriz Lima</td>
+                                <td>Cabo Frio</td>
+                                <td>10/10/2026</td>
+                                <td>2</td>
+                                <td>
+                                    <span class="status confirmado">
+                                        Confirmada
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

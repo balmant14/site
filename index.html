@@ -1,50 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>BeachTrip</title>
-    <link rel="icon" href="/Imgsite/BeachTrip.png" type="img/png"></link>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="icon" type="image/png" href="/Imgsite/BeachTrip.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <img src="/Imgsite/BeachTrip.png" alt="Logo" class="logo">
+
+        <div class="logo">
+            <img src="/Imgsite/BeachTrip.png">
+            <h4>BeachTrip</h4>
+            
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contatos.html">Contatos</a>
+        </nav>
+
     </header>
 
     <main>
-        <div class="esquerda">
-            <h1 class="titulo">Cabo Frio</h1>
-            <p class="praia">Praia das Dunas / Praia do Forte</p>
-            <p class="preco"> R$ 2.900</p>
-            <p class="data">18h, 22/03 - 28/03</p>
-             <p class="info">O preço é pago por pessoa.
-                A nossa viagem inclui tour das praias indicadas, hospedagem e a ida e volta de ônibus,sendo excluso somente a alimentação.
-                Toleramos atrasos de somente 5 minutos em qualquer programação ou horário de saída.
-                Qualquer problema ou erro de nossa empresa será feita devolução do dinheiro, até 12 horas antes da viagem.
-            </p>
-            <img src="Cabo Frio.webp" alt="Imagem" class="foto-baixo">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h2>SUA PRÓXIMA AVENTURA<br>COMEÇA AQUI</h2>
+
+                <p>
+                    Descubra praias incríveis, conheça novos lugares
+                    e viva experiências inesquecíveis com a BeachTrip.
+                </p>
+
+                <div class="botoes">
+
+                    <a href="destinos.html" class="botao principal">
+                        Conheça nossos destinos
+                    </a>
+
+                    <a href="reserva.html" class="botao secundario">
+                        Faça sua reserva
+                    </a>
+
+                </div>
+
             </div>
 
-        <div class="direita">
-        <h1>Informações</h1>
-        <form>
-            <input type="text" placeholder="Nome Completo">
-            <input type="number" placeholder="Idade">
-            <input type="email" placeholder="E-mail">
-                <input type="tel" placeholder="Telefone" value="(31)">
-            <button type="submit">Enviar</button>
-        </form>
-        </div>
+        </section>
+
+        <section class="diferenciais">
+
+            <h2>Por que viajar com a BeachTrip?</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Pacotes completos</h3>
+                    <p>
+                        Encontre opções pensadas para tornar
+                        sua viagem mais simples.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Destinos incríveis</h3>
+                    <p>
+                        Explore praias e lugares inesquecíveis
+                        pelo Brasil.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Facilidade</h3>
+                    <p>
+                        Opções práticas para você planejar
+                        sua próxima viagem.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Atendimento</h3>
+                    <p>
+                        Estamos aqui para ajudar você
+                        durante o planejamento da viagem.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="destaques">
+
+            <h2>Destinos em destaque</h2>
+
+            <div class="destinos">
+
+                <div class="destino">
+                    <div class="imagem">
+                        <span><img src="/Imgsite/Cabo Frio.jfif"></span>
+                    </div>
+
+                    <h3>Cabo Frio</h3>
+                    <p>Rio de Janeiro</p>
+                </div>
+
+
+                <div class="destino">
+                    <div class="imagem">
+                        <span><img src="/Imgsite/Ampulheta.jfif">​</span>
+                    </div>
+
+                    <h3>A definir.</h3>
+                    <p>Próximos destinos ainda em cogitação.</p>
+                </div>
+
+
+                <div class="destino">
+                    <div class="imagem">
+                        <span><img src="/Imgsite/Ampulheta.jfif"></span>
+                    </div>
+
+                    <h3>A definir.</h3>
+                    <p>Próximos destinos ainda em cogitação.</p>
+                </div>
+
+            </div>
+
+            <a href="destinos.html" class="botao ver-destinos">
+                Ver todos os destinos
+            </a>
+
+        </section>
+
     </main>
 
-    <div class="botoes">
-    <a href="/Home/index.html" class="botao">Home</a>
-    <a href="/Contato/index.html" class="botao">Contato</a>
-    <a href="/Sobre/index.html" class="botao">Sobre</a>
-</div>
-    
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h2>BeachTrip</h2>
+
+        <p>
+            Sua próxima aventura começa aqui.
+        </p>
+
+        <p class="copyright">
+            © 2026 BeachTrip. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
 </body>
+
 </html>
